@@ -9,7 +9,7 @@
     <title>Abhishek Srivastava | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.6/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -32,6 +32,12 @@
             top: 0;
             left: 0;
         }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
         header h1 {
             z-index: 2;
             font-size: 4rem;
@@ -46,6 +52,12 @@
             font-size: 1.2rem;
             padding: 10px 20px;
             margin-top: 20px;
+        }
+        .btn-secondary {
+            z-index: 2;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin-left: 10px;
         }
         section {
             padding: 60px 20px;
@@ -68,11 +80,6 @@
             transform: scale(1.05);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
         }
-        iframe {
-            border: none;
-            width: 100%;
-            height: 500px;
-        }
         footer {
             background: #0d1117;
             padding: 20px 0;
@@ -80,79 +87,32 @@
             color: #c9d1d9;
             font-size: 0.9rem;
         }
+        .social-icons i {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .social-icons i:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
-    <section id="big-data-project">
-    <h2 class="section-title">News Sentiment Analysis with Spark</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="project-card">
-                    <h3>Overview</h3>
-                    <p>Implemented a real-time sentiment analysis pipeline using Kafka, Spark, and GCP. The project involved processing streaming news data, analyzing sentiment, and storing results in HDFS.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h3>Step 1: Zookeeper and Kafka Installation</h3>
-                    <ul>
-                        <li>Download and extract Zookeeper and Kafka.</li>
-                        <li>Configure Zookeeper: Set `dataDir` and create `myid` file.</li>
-                        <li>Start Zookeeper and Kafka servers using terminal commands.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h3>Step 2: HDFS and Python Setup</h3>
-                    <ul>
-                        <li>Create directories in HDFS for data storage.</li>
-                        <li>Install required Python libraries: `newsapi-python`, `kafka-python`, and `hdfs`.</li>
-                        <li>Upload `producer.py` and `consumer.py` scripts to GCP.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h3>Step 3: Streaming News Data</h3>
-                    <ul>
-                        <li>Run `producer.py` to fetch news using NewsAPI and send to Kafka topic.</li>
-                        <li>Run `consumer.py` to process and store news data in HDFS.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h3>Step 4: Data Analysis with Spark</h3>
-                    <ul>
-                        <li>Use Spark to process and analyze data from HDFS.</li>
-                        <li>Train and evaluate sentiment analysis models using Spark ML.</li>
-                        <li>Visualize results and derive insights from processed data.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="project-card">
-                    <h3>GitHub Repository</h3>
-                    <p>You can find the full codebase and setup instructions on my <a href="https://github.com/AbhishekSrivastava1999/Big-Data-Final-Project-News-Sentiment-Analysis-with-Spark" target="_blank">GitHub Repository</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
     <header>
         <canvas id="background"></canvas>
+        <img src="your-profile-image.jpg" alt="Abhishek Srivastava">
         <h1>Abhishek Srivastava</h1>
         <p>Data Analyst | Python, SQL, Tableau | Cloud & Big Data Expertise</p>
-        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <p style="font-size: 1.2rem; color: #c9d1d9;">"Turning data into actionable insights, one project at a time."</p>
+        <div>
+            <a href="#about" class="btn btn-primary">Explore My Work</a>
+            <a href="your-resume-link.pdf" class="btn btn-secondary">Download Resume</a>
+        </div>
+        <div class="social-icons" style="margin-top: 20px;">
+            <a href="https://linkedin.com/in/abhishek-srivastava1999/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AbhishekSrivastava1999" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </header>
 
     <section id="about">
@@ -189,19 +149,11 @@
         </div>
     </section>
 
-    <section id="notebooks">
-        <h2 class="section-title">Jupyter Notebooks</h2>
-        <div class="container">
-            <iframe src="https://nbviewer.org/github/AbhishekSrivastava1999/github-portfolio/blob/main/Credit_Card_Fraud_Detection.ipynb"></iframe>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2024 Abhishek Srivastava. All rights reserved.</p>
     </footer>
 
     <script>
-        // Particle animation script
         const canvas = document.getElementById('background');
         const context = canvas.getContext('2d');
         canvas.width = window.innerWidth;
@@ -245,6 +197,11 @@
         }
 
         animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
     </script>
 </body>
 </html>
