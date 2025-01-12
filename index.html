@@ -83,6 +83,71 @@
     </style>
 </head>
 <body>
+    <section id="big-data-project">
+    <h2 class="section-title">News Sentiment Analysis with Spark</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-card">
+                    <h3>Overview</h3>
+                    <p>Implemented a real-time sentiment analysis pipeline using Kafka, Spark, and GCP. The project involved processing streaming news data, analyzing sentiment, and storing results in HDFS.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h3>Step 1: Zookeeper and Kafka Installation</h3>
+                    <ul>
+                        <li>Download and extract Zookeeper and Kafka.</li>
+                        <li>Configure Zookeeper: Set `dataDir` and create `myid` file.</li>
+                        <li>Start Zookeeper and Kafka servers using terminal commands.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h3>Step 2: HDFS and Python Setup</h3>
+                    <ul>
+                        <li>Create directories in HDFS for data storage.</li>
+                        <li>Install required Python libraries: `newsapi-python`, `kafka-python`, and `hdfs`.</li>
+                        <li>Upload `producer.py` and `consumer.py` scripts to GCP.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h3>Step 3: Streaming News Data</h3>
+                    <ul>
+                        <li>Run `producer.py` to fetch news using NewsAPI and send to Kafka topic.</li>
+                        <li>Run `consumer.py` to process and store news data in HDFS.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h3>Step 4: Data Analysis with Spark</h3>
+                    <ul>
+                        <li>Use Spark to process and analyze data from HDFS.</li>
+                        <li>Train and evaluate sentiment analysis models using Spark ML.</li>
+                        <li>Visualize results and derive insights from processed data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-card">
+                    <h3>GitHub Repository</h3>
+                    <p>You can find the full codebase and setup instructions on my <a href="https://github.com/AbhishekSrivastava1999/Big-Data-Final-Project-News-Sentiment-Analysis-with-Spark" target="_blank">GitHub Repository</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <header>
         <canvas id="background"></canvas>
         <h1>Abhishek Srivastava</h1>
