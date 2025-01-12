@@ -8,7 +8,6 @@
     <meta name="author" content="Abhishek Srivastava">
     <title>Abhishek Srivastava | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -40,11 +39,11 @@
             z-index: 2;
             font-size: 1.5rem;
         }
-        .btn-primary {
+        .btn-primary, .btn-secondary {
             z-index: 2;
             font-size: 1.2rem;
             padding: 10px 20px;
-            margin-top: 20px;
+            margin: 10px;
         }
         section {
             padding: 60px 20px;
@@ -88,8 +87,41 @@
         <canvas id="background"></canvas>
         <h1>Abhishek Srivastava</h1>
         <p>Data Analyst | Python, SQL, Tableau | Cloud & Big Data Expertise</p>
-        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <p>"Turning data into actionable insights, one project at a time."</p>
+        <div>
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+        </div>
     </header>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>AWS Two-Tier Web Application Deployment</h3>
+                        <p>Developed a scalable two-tier architecture with containerized MySQL and Flask applications.</p>
+                        <a href="https://github.com/AbhishekSrivastava1999/2-Tier-Web-Application-on-AWS" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <p>Built a machine learning model achieving 94.5% accuracy in detecting fraudulent transactions.</p>
+                        <a href="https://github.com/AbhishekSrivastava1999/Credit-Card-Fraud-Detection" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h3>News Sentiment Analysis with Spark</h3>
+                        <p>Implemented a real-time sentiment analysis pipeline using Kafka, Spark, and GCP.</p>
+                        <a href="https://github.com/AbhishekSrivastava1999/Big-Data-Final-Project-News-Sentiment-Analysis-with-Spark" target="_blank">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="certifications">
         <h2 class="section-title">Certifications</h2>
